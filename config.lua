@@ -11,8 +11,8 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save.enabled = false
-lvim.colorscheme = "github_dark_default"
-lvim.transparent_window = false
+lvim.colorscheme = "catppuccin"
+lvim.transparent_window = true
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
 --
@@ -70,6 +70,7 @@ lvim.builtin.illuminate.active = false
 lvim.builtin.treesitter.ensure_installed = {
 	"bash",
 	"c",
+  "elixir",
 	"javascript",
 	"json",
 	"lua",
