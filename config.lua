@@ -10,7 +10,7 @@ an executable
 
 -- general
 lvim.log.level = "warn"
-lvim.format_on_save.enabled = false
+lvim.format_on_save.enabled = true
 lvim.colorscheme = "catppuccin"
 lvim.transparent_window = true
 -- to disable icons and use a minimalist setup, uncomment the following
@@ -19,6 +19,7 @@ lvim.transparent_window = true
 require("user.keymaps")
 require("user.options")
 require("user.plugins")
+require("user.whichkey")
 -- require("user.illuminate")
 vim.cmd("au BufNewFile,BufRead Jenkinsfile setf groovy")
 
@@ -70,7 +71,7 @@ lvim.builtin.illuminate.active = false
 lvim.builtin.treesitter.ensure_installed = {
 	"bash",
 	"c",
-  "elixir",
+	"elixir",
 	"javascript",
 	"json",
 	"lua",
