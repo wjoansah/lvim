@@ -28,10 +28,12 @@ lvim.plugins = {
 		end,
 	},
 	{
-		"windwp/nvim-spectre",
-		event = "BufRead",
+		"ThePrimeagen/harpoon",
 		config = function()
-			require("spectre").setup()
+			require("user.harpoon")
 		end,
+	},
+	{
+		"mrjones2014/nvim-ts-rainbow",
 	},
 }
