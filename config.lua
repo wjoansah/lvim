@@ -23,6 +23,10 @@ require("user.whichkey")
 -- require("user.illuminate")
 vim.cmd("au BufNewFile,BufRead Jenkinsfile setf groovy")
 
+vim.cmd("au BufWinLeave *.* mkview")
+vim.cmd("au BufWinEnter *.* silent loadview")
+
+vim.cmd("highlight CursorWord cterm=bold gui=bold")
 -- Change Telescope navigation to use j and k for navigation and n and p for history in both input and normal mode.
 -- we use protected-mode (pcall) just in case the plugin wasn't loaded yet.
 -- local _, actions = pcall(require, "telescope.actions")
